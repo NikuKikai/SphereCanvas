@@ -113,7 +113,7 @@ function ImageItem({ url, idx }: { url: string, idx: number }) {
                     style={{ fontSize: '20px', lineHeight: '20px', color: 'gray', border: 'none' }}
                     onClick={handleAddPlace}
                 >+</div>
-                {place?.map((p, i) => (
+                {place?.map((_p, i) => (
                     <PlaceItem
                         key={i} url={url} idx={i}
                         selected={selected?.url === url && selected.iPlace === i}
